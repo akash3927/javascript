@@ -43,4 +43,4 @@ if(result == 0) {
     console.log('The strings are similar.');
 } else {
     console.log('The strings are not similar.');
-}
+}         
