@@ -1,23 +1,45 @@
 /** @format */
 
-// program to remove a property from an object
+// program to count the number of vowels in a string
 
-// creating an object
-const student = {
-	name: 'John',
-	age: 20,
-	hobbies: ['reading', 'games', 'coding'],
-	greet: function () {
-		console.log('Hello everyone.');
-	},
-	score: {
-		maths: 90,
-		science: 80,
-	},
-};
+function countVowel(str) {
+	// find the count of vowels
+	const count = str.match(/[aeiou]/gi).length;
 
-// deleting a property from an object
-delete student.greet;
-delete student['score'];
+	// return number of vowels
+	return count;
+}
 
-console.log(student);
+// take input
+const string = prompt('Enter a string: ');
+
+const result = countVowel(string);
+
+console.log(result);
+
+// program to count the number of vowels in a string
+
+// defining vowels
+const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+function countVowel(str) {
+	// initialize count
+	let count = 0;
+
+	// loop through string to test if each character is a vowel
+	for (let letter of str.toLowerCase()) {
+		if (vowels.includes(letter)) {
+			count++;
+		}
+	}
+
+	// return number of vowels
+	return count;
+}
+
+// take input
+const string = prompt('Enter a string: ');
+
+const result = countVowel(string);
+
+console.log(result);
