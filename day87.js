@@ -30,3 +30,17 @@ function sayName(name) {
 
 // calling the function after 2 seconds
 setTimeout(greet, 2000, 'John', sayName);
+
+//  program that shows the delay in execution
+
+function greet() {
+	console.log('Hello world');
+}
+
+function sayName(name) {
+	console.log('Hello' + ' ' + name);
+}
+
+// calling the function
+setTimeout(greet, 2000);
+sayName('John');
