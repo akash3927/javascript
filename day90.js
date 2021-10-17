@@ -15,3 +15,5 @@ Promise.resolve()
 	});
 
 console.log('script end');
+
+//https://developpaper.com/detailed-javascript-tasks-microtasks-queues-and-code-execution-sequence/
